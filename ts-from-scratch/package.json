@@ -2,7 +2,8 @@
   "name": "ts-from-scratch",
   "private": true,
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "start": "node -r source-map-support/register build/index.js"
   },
   "dependencies": {
     "source-map-support": "^0.5.13"

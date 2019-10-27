@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
-
+    "outDir": "build", //katalog wyjściowy
+    "strict": true,
+    "sourceMap": true
   }
 }

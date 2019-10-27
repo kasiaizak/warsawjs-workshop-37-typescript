@@ -1,8 +1,13 @@
+interface Person {
+  firstName: string,
+  lastName: string
+}
+
 function sayHello (person: string) {
   console.log('Hello ' + person)
 }
 
-function getFullName (person: {firstName: string, lastName: string}): string {
+function getFullName (person: Person): string {
   return person.firstName + ' ' + person.lastName
 }
 

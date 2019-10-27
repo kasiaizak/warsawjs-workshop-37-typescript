@@ -1,7 +1,9 @@
+import { Animal } from "./classes";
+
 console.log('2')
 
-let x: 1 | 2 | 3 | null = 1 as any;
-if (x != null && x != 2) console.log(x);
+// let x: 1 | 2 | 3 | null = 1 as any;
+// if (x != null && x != 2) console.log(x);
 
 enum AnimalType {
   DOG = 1,

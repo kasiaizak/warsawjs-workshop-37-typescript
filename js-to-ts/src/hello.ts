@@ -1,6 +1,8 @@
 interface Person {
   firstName: string,
-  lastName?: string
+  lastName?: string,
+  age: number,
+  male?: boolean
 }
 
 function getMe (people: Person[]): Person | undefined {
@@ -25,7 +27,9 @@ function getFullName (person?: Person): string {
 
 let me = {
   firstName: 'Piotr',
-  lastName: 'Szlachciak'
+  lastName: 'Szlachciak',
+  age: 23,
+  male: true
 }
 
 let fullName = getFullName(me)
@@ -33,14 +37,18 @@ let fullName = getFullName(me)
 sayHello(fullName)
 
 let kasia = getMe([
-  {
-    firstName: 'Piotr',
-    lastName: 'Szlachciak'
-  },
+  me,
   {
     firstName: 'Kasia',
-    lastName: 'Izak'
+    lastName: 'Izak',
+    age: 36,
+    male: false
   }
 ])
 
-console.log(getFullName(kasia))
+function getAge (person?: Person): number | undefined {
+  if(person)
+    return person.age
+}
+
+console.log(getFullName(kasia), getAge(kasia))

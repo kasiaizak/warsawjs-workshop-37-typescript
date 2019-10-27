@@ -1,2 +1,1 @@
-import './vector2-1'
-import './vector2-2'
+import './generics'

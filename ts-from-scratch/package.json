@@ -2,9 +2,10 @@
   "name": "ts-from-scratch",
   "private": true,
   "scripts": {
+    "build": "tsc"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
+    "typescript": "^3.6.4"
   }
 }

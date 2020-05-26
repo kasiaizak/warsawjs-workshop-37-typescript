@@ -2,8 +2,8 @@
   "name": "ts-from-scratch",
   "private": true,
   "scripts": {
-    "build": "tsc",
-    "start": "node -r source-map-support/register build/index.js",
+    "build": "rimraf build && tsc",
+    "start": "node -r source-map-support/register build/src/index.js",
     "test": "mocha"
   },
   "dependencies": {

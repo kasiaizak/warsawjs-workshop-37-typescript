@@ -1,5 +1,4 @@
-
-function sayHi (name: string) {
+export function sayHi (name: string) {
   console.log('Hi ' + name.toUpperCase())
 }
 
@@ -10,15 +9,14 @@ function useAnyValue (value: unknown) {
 }
 
 function callLater (callback: () => void) {
-  callback()
+  callback();
 }
 
-let myName: any = 'Kasia'
-// myName = 12
+let myName: any = 'Paulina'
 
 sayHi(myName)
 let anyValue = useAnyValue(myName)
-callLater(() => console.log('called'))
+callLater(() => console.log("called"))
 callLater(() => undefined)
 
 function exception (): never {

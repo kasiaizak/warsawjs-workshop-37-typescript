@@ -19,7 +19,7 @@ class Dog extends Animal {
   }
 
   static speak(dog: Dog) {
-    return `${dog.name}, ${dog.owner}'s dog, says hau`;
+    return `${dog.name}, ${dog.owner}'s dog, says hau!`;
   }
 
   get isHappy() {
@@ -32,10 +32,9 @@ class Dog extends Animal {
 }
 
 let dog = new Dog('Fluffy', 'Piotr')
-
 console.log(dog.isHappy)
-dog.isHappy = true
-console.log(Dog.speak(dog))
+dog.isHappy = true;
+console.log(Dog.speak(dog));
 console.log(dog instanceof Dog)
 console.log(dog instanceof Animal)
 console.log(dog instanceof Array)

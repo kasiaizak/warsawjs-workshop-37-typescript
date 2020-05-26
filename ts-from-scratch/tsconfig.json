@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
-    "outDir": "build", //katalog wyjściowy
+    "outDir": "build",
     "strict": true,
-    "sourceMap": true
+    "sourceMap": true,
+    "skipLibCheck": true
   }
 }

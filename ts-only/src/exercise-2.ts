@@ -1,11 +1,9 @@
-import { Animal } from "./classes";
-
 console.log('2')
 
-// let x: 1 | 2 | 3 | null = 1 as any;
-// if (x != null && x != 2) console.log(x);
+let x: 1 | 2 | 3 | null = 1 as any;
+if (x != null && x != 2) console.log(x);
 
-enum AnimalType {
+export enum AnimalType {
   DOG = 1,
   CAT,
   MOUSE
@@ -56,7 +54,6 @@ let foo = {
 function bar (baz: { name?: string }) {
   return baz.name
 }
-
 function createAnimal (value: {name: string, type: 1 | 2 | 3}): Dog | Cat | Mouse {
   if (value.type === 1) {
     return {
